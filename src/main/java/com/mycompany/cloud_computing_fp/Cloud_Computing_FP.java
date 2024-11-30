@@ -5,12 +5,28 @@ import com.mycompany.cloud_computing_fp.Algorithms.ProposedByMe;
 import com.mycompany.cloud_computing_fp.Algorithms.RandomAlgorithm;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import utils.CSVWriter;
 import utils.DataGenerator;
 public class Cloud_Computing_FP {
+
+    //private static Object algorithm;
     public static void main(String[] args) {
-        // 
-        int numVMs = 200; 
+        //this is second scenario
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter 1 for scenario one: Virtual machines are 250, physical machines are 100 \n "
+                + "enter 2 for scenario two: Virtual machines are 150, physical machines are 200");
+        int chooseScenario=sc.nextInt();
+        System.out.println("you choose : "+chooseScenario);
+        switch(chooseScenario){
+                case 1 :
+                        System.out.print(scenarioOne(250,100));
+                case 2: 
+                    System.out.print(scenarioTwo(200,150));
+                default: System.out.println(" just enter 1 or 2 ");
+        }
+        //this is first scenario
+        int numVMs = 250; 
         int numPMs = 100; 
         int numRuns = 10; 
         List<VM> vms = DataGenerator.generateVMs(numVMs, 500, 4000);//.. am lista bo generate dakat ata boman drwst dakat ka la classy generator bangman krdotawa w lera parameterman pe dawa 
@@ -35,4 +51,14 @@ The method takes five parameters: algorithm (an instance of the Algorithm interf
             List<PM> usedPMs = algorithm.placeVMs(vmsCopy, pmsCopy);
             CSVWriter.writeResults(fileName, usedPMs);
         }
-    }}
+    }
+
+ static int scenarioOne(int numVMs,int numPMs){
+
+ return 1;
+ }
+
+ static int scenarioTwo(int numVMs,int numPMs){
+
+return 2;}
+}
