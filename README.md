@@ -60,3 +60,12 @@ public class Cloud_Computing_FP {
         }
     }
 }
+## References:
+References:
+1.	Microsoft copilot for understanding and explanation.
+2.	https://github.com/miks98/OperatingSystems.git
+3.	https://github.com/rakeshbommisetty/RandomCodez.git
+4.	https://github.com/SVijayB/JavaSpace.git
+5.	https://github.com/hrithik1104/Greedy-Algorithms.git
+6.	https://github.com/princeNITian/Operating-System-Basic-programs.git
+7.	https://github.com/HongquanYu/Algorithms.git
